@@ -1,20 +1,19 @@
+def calculator():
+    num1 = float(input("请输入第一个数字："))
+    operator = input("请输入运算符（+、-、*、/）：")
+    num2 = float(input("请输入第二个数字："))
 
-# 这是一个示例 Python 脚本。
+    if operator == '+':
+        result = num1 + num2
+    elif operator == '-':
+        result = num1 - num2
+    elif operator == '*':
+        result = num1 * num2
+    elif operator == '/':
+        result = num1 / num2
+    else:
+        result = "无效的运算符"
 
-# 按 Shift+F10 执行或将其替换为您的代码。
-# 按 双击 Shift 在所有地方搜索类、文件、工具窗口、操作和设置。
-#测试
+    print(f"结果：{result}")
 
-def print_hi(name):
-    # 在下面的代码行中使用断点来调试脚本。
-    print(f'Hi, {name}')  # 按 Ctrl+F8 切换断点。
-
-
-# 按装订区域中的绿色按钮以运行脚本。
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
-def test():
-    print_hi('PyCharm')
-
+calculator()
